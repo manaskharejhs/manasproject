@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+	<style>
+		*{
+    margin: 0;
+    padding: 0;
+    
+}
+.box{
+    width:60%;
+    margin-left:10vh;
+    margin-top: 5vh;
+    height: 80vh;
+    border:1px solid black;
+}
+header{
+    width: 100%;
+    height:100vh;
+    background-color: blue;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('https://www.thebalancecareers.com/thmb/hKctLkuZxqFGd3XpQCUjQBjSPjQ=/3436x2577/smart/filters:no_upscale()/school-books-on-desk--education-concept-871454068-5b548900c9e77c005b04fc8c.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-transform:uppercase ;
+
+}
+nav .heading{
+    width:25%;
+    text-align: center;
+}
+nav .tags{
+    width: 40%;
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav .tags a{
+    text-decoration:none;
+    color:white;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-spacing: 10px;
+}
+section h1{
+    color:red;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+section h4{
+    font-size: 25px;
+    color: #eeeeee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color:aqua;
+}
+footer h3{
+    position: relative;
+    bottom:40px;
+    left:20px;
+    color:red;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    padding-right: 40px;
+}
+.tags a:hover{
+    background-color: #ffffff;
+    color:red;
+    font-size: 20px;
+}
+section a:hover{
+    border:1px black;
+    color:black;
+    font-weight: bold;
+}
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+    font-size: 40px;
+
+}
+@keyframes changetext
+{
+    0%{content: "Darjeeling";}
+    25%{content: "Jhansi";}
+    35%{content: "Bhopal";}
+    60%{content: "Pune";}
+    80%{content: "Delhi";}
+    100%{content: "Kolkata";}
+
+}
+	</style>
+</head>
+<body>
+    <header>
+        <nav  class="bar">
+           <div class="heading"> <h3 class="animated infinite heartBeat">SCHOLARSHIPS</h3>
+        </div>
+           <div class="tags">
+            <a href="https://www.google.com/">HOME</a>
+            <a href="#">GALLERY</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <h3>WELCOME TO YOUR SCHOLARSHIPS</h3>
+                <h1>DO COME AND VISIT<span class="change_content"> </span></h1>
+                <h4 style="color:violet">"Click on SIGNUP PAGE to fill a scholarship form"</h4>
+                <a href="#" class="btnone">LEARN MORE</a>
+                <a href="form.html">SIGNUP PAGE</a>
+            
+            </section>
+            
+        </main>
+        <footer>
+            <h3 class="animated infinite bounce">MADEBY:-MANAS SRIVASTAVA</h3>
+        </footer>
+    </header>
+</body>
+</html>
